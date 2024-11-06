@@ -1,3 +1,5 @@
+package PracticeOOP;
+
 public class Motorbike extends Vehicle{
     public Motorbike(String brand, int wheels) {
         super(brand, wheels);

@@ -1,3 +1,5 @@
+package PracticeOOP;
+
 public class Vehicle {
     private String brand;
     protected int velocity;
