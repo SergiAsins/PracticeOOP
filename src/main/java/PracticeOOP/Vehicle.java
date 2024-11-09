@@ -1,24 +1,28 @@
 package PracticeOOP;
 
-public class Vehicle {
+public abstract class Vehicle {
     private String brand;
     protected int velocity;
     protected int wheels;
 
     public Vehicle(String brand, int wheels) {
         this.brand = brand;
-        this.wheels = velocity;
+        this.wheels = wheels;
+        this.velocity = 0;
     }
 
-    public void accelerate(){
-        this.velocity += 10;
-    }
-
-    public void brake(){
-        this.velocity -= 10;
-    }
+    public abstract void accelerate();
+    public abstract void brake();
 
     public int getVelocity() {
         return velocity;
+    }
+
+    public int getWheels() {
+        return wheels;
+    }
+
+    public String getBrand() {
+        return brand;
     }
 }

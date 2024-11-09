@@ -5,13 +5,11 @@ public class Motorbike extends Vehicle{
         super(brand, wheels);
     }
 
-    @Override
     public void accelerate() {
         this.velocity += 20;
     }
 
-    @Override
     public void brake() {
-        this.velocity += 20;
+        this.velocity -= 20;
     }
 }

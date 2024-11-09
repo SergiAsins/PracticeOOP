@@ -5,12 +5,10 @@ public class Car extends Vehicle {
         super(brand, wheels);
     }
 
-    @Override
     public void accelerate() {
         this.velocity += 40;
     }
 
-    @Override
     public void brake() {
         this.velocity -= 40;
     }

@@ -12,6 +12,8 @@ public class Race {
         for (Vehicle vehicle : mainGroup) {
             vehicle.accelerate();
             System.out.println(vehicle.getClass().getSimpleName() + " (" + vehicle.getVelocity() + " km/h)");
+            vehicle.brake();
+            System.out.println(vehicle.getClass().getSimpleName() + " (" + vehicle.getVelocity() + " km/h)");
         }
     }
 }
